@@ -39,6 +39,7 @@
         <splash density="port-xhdpi" src="resources/android/splash/drawable-port-xhdpi-screen.png" />
         <splash density="port-xxhdpi" src="resources/android/splash/drawable-port-xxhdpi-screen.png" />
         <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
+        <hook src="scripts/android_after_plugin_installed.js" type="after_plugin_install" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
@@ -76,13 +77,14 @@
         <splash height="480" src="resources/ios/splash/Default~iphone.png" width="320" />
         <splash height="2732" src="resources/ios/splash/Default@2x~universal~anyany.png" width="2732" />
     </platform>
-    <allow-navigation href="http://192.168.0.8:8100" />
-    <allow-navigation href="http://169.254.206.202:8100" />
-    <engine name="browser" spec="^4.1.0" />
-    <plugin name="cordova-plugin-broadcaster" spec="^3.0.1" />
     <plugin name="cordova-plugin-device" spec="^1.1.4" />
     <plugin name="cordova-plugin-ionic-webview" spec="^1.1.16" />
     <plugin name="cordova-plugin-splashscreen" spec="^4.0.3" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.1" />
     <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
+    <engine name="browser" spec="~4.1.0" />
+    <allow-navigation href="http://192.168.0.8:8100" />
+    <allow-navigation href="http://169.254.206.202:8100" />
+    <engine name="android" spec="~6.2.3" />
+    <plugin name="cordova-plugin-broadcaster" spec="^3.0.1" />
 </widget>
