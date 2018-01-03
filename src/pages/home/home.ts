@@ -43,6 +43,10 @@ export class HomePage {
           })
       
     }
+    else if( cordova.platformId === "android" ) {
+
+      this.broadcaster.fireNativeEvent( "START.TEST.EVENT", { start:1000, period:1000} );
+    }
 
   }
   
