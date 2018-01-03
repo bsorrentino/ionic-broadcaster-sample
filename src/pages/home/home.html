@@ -1,14 +1,24 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      BROADCASTER PLUGIN SAMPLE
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <ion-list>
+
+    <ion-item>
+        <button ion-button (click)="onRegisterListener()">Register Listener</button>
+        <button ion-button (click)="onUnregisterListener()">Unregister Listener</button>    
+    </ion-item>
+
+    <ion-item >
+
+        <button ion-button (click)="onStartTest()">Test</button>
+    </ion-item>
+    
+  </ion-list>
 </ion-content>
