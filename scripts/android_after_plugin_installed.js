@@ -22,7 +22,7 @@ module.exports = function (context) {
     var platforms = context.opts.cordova.platforms.filter(function (p) { return p === "android"; });
     if (platforms.length === 0)
         return;
-    var rel = path.join('src', 'io', 'ionic', 'starter');
+    var rel = path.join('app', 'src', 'main', 'java', 'io', 'ionic', 'starter');
     var source = path.join(context.opts.projectRoot, "android-assets", rel, 'MainActivity.java');
     var target = path.join(context.opts.projectRoot, "platforms", platforms[0], rel);
     console.log("copy\n", source, "\nto\n", target);

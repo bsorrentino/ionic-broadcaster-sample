@@ -5,7 +5,7 @@
 import * as path from "path";
 import * as fs from "fs";
 
-function copyFileSync( source, target ) {
+function copyFileSync( source:string, target:string ) {
 
     var targetFile = target;
 
@@ -30,7 +30,7 @@ module.exports =  function(context:Context):void {
     let platforms = context.opts.cordova.platforms.filter( (p) => p==="android" );
     if( platforms.length === 0) return;
 
-    let rel = path.join( 'src', 'io', 'ionic', 'starter');
+    let rel = path.join('app','src','main','java','io', 'ionic', 'starter');
 
     let source = path.join( context.opts.projectRoot, "android-assets", rel, 'MainActivity.java' );
     let target = path.join( context.opts.projectRoot, "platforms", platforms[0], rel );
