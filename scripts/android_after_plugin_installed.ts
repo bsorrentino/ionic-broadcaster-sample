@@ -30,14 +30,28 @@ module.exports =  function(context:Context):void {
     let platforms = context.opts.cordova.platforms.filter( (p) => p==="android" );
     if( platforms.length === 0) return;
 
-    let rel = path.join('app','src','main','java','io', 'ionic', 'starter');
+    let rel = path.join('io', 'ionic', 'starter');
 
-    let source = path.join( context.opts.projectRoot, "android-assets", rel, 'MainActivity.java' );
-    let target = path.join( context.opts.projectRoot, "platforms", platforms[0], rel );
+    let source = path.join( context.opts.projectRoot, "android-assets", 'src', rel, 'MainActivity.java' );
+    let plt_target = path.join( context.opts.projectRoot, "platforms", platforms[0] );
+    
+    {
+    let src_target = path.join( plt_target, "app" );
+    if( fs.existsSync(src_target) ) {
+        let target = path.join( src_target, 'src','main','java', rel );
+        console.log( "copy\n", source, "\nto\n", target);
+        copyFileSync(source, target);
+        return;
+    }}
 
+    {
+    let src_target = path.join( plt_target, "src" );
+    let target = path.join( src_target, rel );
     console.log( "copy\n", source, "\nto\n", target);
+    copyFileSync(source, target);
+    }
+    
 
-    copyFileSync(source,target);
 
 
 

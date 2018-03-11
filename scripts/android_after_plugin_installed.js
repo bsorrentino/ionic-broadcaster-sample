@@ -14,17 +14,28 @@ function copyFileSync(source, target) {
     fs.writeFileSync(targetFile, fs.readFileSync(source));
 }
 module.exports = function (context) {
-    //console.dir( context, {depth:3} );
-    //console.log( "root", context.opts.projectRoot);
     var plugins = context.opts.cordova.plugins.filter(function (p) { return p === "cordova-plugin-broadcaster"; });
     if (plugins.length === 0)
         return;
     var platforms = context.opts.cordova.platforms.filter(function (p) { return p === "android"; });
     if (platforms.length === 0)
         return;
-    var rel = path.join('app', 'src', 'main', 'java', 'io', 'ionic', 'starter');
-    var source = path.join(context.opts.projectRoot, "android-assets", rel, 'MainActivity.java');
-    var target = path.join(context.opts.projectRoot, "platforms", platforms[0], rel);
-    console.log("copy\n", source, "\nto\n", target);
-    copyFileSync(source, target);
+    var rel = path.join('io', 'ionic', 'starter');
+    var source = path.join(context.opts.projectRoot, "android-assets", 'src', rel, 'MainActivity.java');
+    var plt_target = path.join(context.opts.projectRoot, "platforms", platforms[0]);
+    {
+        var src_target = path.join(plt_target, "app");
+        if (fs.existsSync(src_target)) {
+            var target = path.join(src_target, 'src', 'main', 'java', rel);
+            console.log("copy\n", source, "\nto\n", target);
+            copyFileSync(source, target);
+            return;
+        }
+    }
+    {
+        var src_target = path.join(plt_target, "src");
+        var target = path.join(src_target, rel);
+        console.log("copy\n", source, "\nto\n", target);
+        copyFileSync(source, target);
+    }
 };
