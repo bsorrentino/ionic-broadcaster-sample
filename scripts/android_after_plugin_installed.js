@@ -14,6 +14,8 @@ function copyFileSync(source, target) {
     fs.writeFileSync(targetFile, fs.readFileSync(source));
 }
 module.exports = function (context) {
+    //console.dir( context, {depth:3} );
+    //console.log( "root", context.opts.projectRoot);
     var plugins = context.opts.cordova.plugins.filter(function (p) { return p === "cordova-plugin-broadcaster"; });
     if (plugins.length === 0)
         return;

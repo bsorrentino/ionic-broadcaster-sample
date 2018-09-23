@@ -28,3 +28,9 @@ I've Used
 1. Run `ionic cordova platform add android`
 2. Run `ionic cordova build android`
 1. Run `ionic cordova run android`
+
+## IOS Platform
+
+1. Run `ionic cordova platform add ios`
+2. Run `ionic cordova build ios`
+1. Run `ionic cordova run ios`

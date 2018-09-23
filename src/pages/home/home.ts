@@ -58,7 +58,7 @@ export class HomePage {
           })
 
     }
-    else if( cordova.platformId === "android" ) {
+    else if( cordova.platformId === "android" || cordova.platformId === "ios" ) {
       const ev = "START.TEST.EVENT";
       this.L( "fire native event", ev);
       this.broadcaster.fireNativeEvent( ev, { start:1000, period:1000} );
