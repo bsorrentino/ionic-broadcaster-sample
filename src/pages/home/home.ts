@@ -1,4 +1,4 @@
-import { Component, NgZone } from '@angular/core';
+import { Component, NgZone, OnInit } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Broadcaster } from '@ionic-native/broadcaster';
 import { Subscription } from 'rxjs/Subscription';
@@ -9,7 +9,7 @@ import { timer } from 'rxjs/Observable/timer';
   selector: 'page-home',
   templateUrl: 'home.html'
 })
-export class HomePage {
+export class HomePage implements OnInit {
 
   private logs = new Array<string>();
 
@@ -21,6 +21,9 @@ export class HomePage {
 
   }
 
+  ngOnInit() {
+    console.log( 'ngOnInit' );
+  }
 
   private L( ...args: any[] ) {
     let v = args.join(' ');
