@@ -27,7 +27,7 @@
         "cordova": "^7.0.1",
         "cordova-browser": "^5.0.4",
         "cordova-ios": "^4.4.0",
-        "cordova-plugin-broadcaster": "^3.1.1",
+        "cordova-plugin-broadcaster": "git+https://github.com/bsorrentino/cordova-broadcaster.git#develop",
         "cordova-plugin-device": "^1.1.4",
         "cordova-plugin-ionic-webview": "^1.1.16",
         "cordova-plugin-splashscreen": "^4.0.3",
@@ -38,7 +38,7 @@
         "ionic-angular": "3.9.2",
         "ionic-plugin-keyboard": "^2.2.1",
         "ionicons": "3.0.0",
-        "lodash": "4.17.5",
+        "lodash": "^4.17.14",
         "rxjs": "5.5.2",
         "sshpk": "1.13.2",
         "sw-toolbox": "3.6.0",
@@ -46,7 +46,7 @@
     },
     "devDependencies": {
         "@ionic-native/broadcaster": "^4.5.2",
-        "@ionic/app-scripts": "3.1.6",
+        "@ionic/app-scripts": "^3.2.4",
         "@types/cordova": "0.0.34",
         "@types/node": "^8.5.2",
         "typescript": "2.4.2"
