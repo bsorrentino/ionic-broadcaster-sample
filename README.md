@@ -7,10 +7,10 @@ Currently This project support Cordova platform **Browser** and **Android**. (**
 ## Requirements
 
 I've Used
-* **Node** version `v8.5.0`
-* **npm** version `5.6.0`
-* **cordova** version `7.0.1`
-* **ionic** version `3.19.0` (_local to project_)
+* **Node** version `v10.14.2`
+* **npm** version `6.9.0`
+* **cordova** version `7.0.1` (_local to project_)
+* **ionic** version `3.20.1` (_local to project_)
 
 ## Getting Started
 
@@ -25,7 +25,7 @@ I've Used
 
 ## Android Platform
 
-1. Run `ionic cordova platform add android`
+1. Run `ionic cordova platform add android@8.0.0`
 2. Run `ionic cordova build android`
 1. Run `ionic cordova run android`
 
