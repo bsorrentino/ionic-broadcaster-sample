@@ -20,6 +20,7 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
     <platform name="android">
+        <preference name="android-targetSdkVersion" value="28" />
         <allow-intent href="market:*" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
@@ -80,12 +81,13 @@
     </platform>
     <allow-navigation href="http://192.168.0.8:8100" />
     <allow-navigation href="http://169.254.206.202:8100" />
-    <plugin name="cordova-plugin-device" spec="^1.1.4" />
-    <plugin name="cordova-plugin-ionic-webview" spec="^1.1.16" />
-    <plugin name="cordova-plugin-splashscreen" spec="^4.0.3" />
-    <plugin name="cordova-plugin-whitelist" spec="^1.3.1" />
-    <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
     <engine name="browser" spec="^5.0.4" />
-    <engine name="ios" spec="~4.4.0" />
-    <plugin name="cordova-plugin-broadcaster" spec="https://github.com/bsorrentino/cordova-broadcaster.git#develop" />
+    <engine name="ios" spec="^4.5.5" />
+    <plugin name="cordova-plugin-device" spec="^1.1.7" />
+    <plugin name="cordova-plugin-ionic-webview" spec="^1.2.1" />
+    <plugin name="cordova-plugin-splashscreen" spec="^4.1.0" />
+    <plugin name="cordova-plugin-whitelist" spec="^1.3.4" />
+    <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
+    <plugin name="cordova-plugin-broadcaster" spec="^3.1.1" />
+    <engine name="android" spec="~8.0.0" />
 </widget>
