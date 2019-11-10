@@ -9,7 +9,7 @@ Currently This project support Cordova platform **Browser** and **Android**. (**
 I've Used
 * **Node** version `v10.14.2`
 * **npm** version `6.9.0`
-* **cordova** version `7.0.1` (_local to project_)
+* **cordova** version `7.1.0` (_local to project_)
 * **ionic** version `3.20.1` (_local to project_)
 
 ## Getting Started
