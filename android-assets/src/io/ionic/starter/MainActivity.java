@@ -71,9 +71,14 @@ public class MainActivity extends CordovaActivity
     void sendJSMessage() {
         final Intent intent = new Intent("TEST.EVENT");
 
-        Bundle b = new Bundle();
+        final Bundle child = new Bundle();
+        child.putString( "name", "joker");
+
+        final Bundle b = new Bundle();
         b.putString( "data", "test");
         b.putBoolean( "valid", true );
+        b.putBundle( "child", child );
+
         intent.putExtras( b);
 
         LocalBroadcastManager.getInstance(this).sendBroadcastSync(intent);
