@@ -7,10 +7,28 @@ Currently This project support Cordova platform **Browser** and **Android**. (**
 ## Requirements
 
 I've Used
-* **Node** version `v10.14.2`
-* **npm** version `6.9.0`
-* **cordova** version `7.1.0` (_local to project_)
-* **ionic** version `3.20.1` (_local to project_)
+
+### Node 
+item   | version | note
+ --- | -- | --
+Node | `12.16.1`
+npm  | `6.13.4`
+
+### Cordova 
+
+item   | version | note
+ --- | -- | --
+cordova dist | `7.1.0` | _local to project_
+ordova android engine | `8.0.0` | 
+cordova ios engine | `4.5.5` |
+cordova browser engine | `5.0.4` |
+
+### Ionic
+
+item   | version | note
+ --- | -- | --
+ionic cli | `3.20.1`| _local to project_
+ionic native | `4.4.0`|
 
 ## Getting Started
 
