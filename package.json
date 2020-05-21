@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/bsorrentino/ionic-broadcaster-sample#readme",
   "dependencies": {
-    "@ionic/cli": "^6.9.2"
+    
+  },
+  "devDependencies": {
+    "npx-run": "^2.1.2"
   }
 }
