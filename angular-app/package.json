@@ -28,6 +28,8 @@
     "@ionic/angular": "^5.0.0",
     "@ionic/cli": "^6.9.2",
     "cordova-android": "^8.1.0",
+    "cordova-browser": "^6.0.0",
+    "cordova-ios": "^5.1.1",
     "cordova-plugin-broadcaster": "file:../../cordova-broadcaster",
     "rxjs": "~6.5.1",
     "tslib": "^1.10.0",
@@ -80,7 +82,9 @@
       "cordova-plugin-broadcaster": {}
     },
     "platforms": [
-      "android"
+      "android",
+      "ios",
+      "browser"
     ]
   }
 }
