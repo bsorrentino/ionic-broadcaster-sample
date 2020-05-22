@@ -1,6 +1,6 @@
 # ionic-broadcaster-sample
 
-Sample usage of [cordova-broadcaster](https://github.com/bsorrentino/cordova-broadcaster) in ionic3 using [ionic-native](https://ionicframework.com/docs/native/broadcaster/)
+Sample usage of [cordova-broadcaster](https://github.com/bsorrentino/cordova-broadcaster) in **ionic 5** using [ionic-native](https://ionicframework.com/docs/native/broadcaster/)
 
 Currently This project support Cordova platform **Browser**, **Android**, **IOS**
 
@@ -21,7 +21,7 @@ item   | version | note
  --- | -- | --
 cordova dist | `9.0.0` | _local to project_
 cordova android engine | `8.1.0` | 
-cordova ios engine | `^5.1.1` |
+cordova ios engine | `5.1.1` |
 cordova browser engine | `6.0.0` |
 
 ### Ionic
