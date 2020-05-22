@@ -8,7 +8,14 @@ In **config.xml** add
 
 <platform name="android">
 
-    <hook src="scripts/android_after_plugin_installed.js" type="after_plugin_install" />
+    <hook src="scripts/bin/android_after_plugin_installed.js" type="after_plugin_install" />
+
+</platform>
+
+
+<platform name="ios">
+
+    <hook src="scripts/bin/ios_after_plugin_installed.js" type="after_plugin_install" />
 
 </platform>
 ```

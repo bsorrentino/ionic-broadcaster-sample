@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 "use strict";
+/// <reference path="context.d.ts"/>
 Object.defineProperty(exports, "__esModule", { value: true });
 var path = require("path");
 var fs = require("fs");

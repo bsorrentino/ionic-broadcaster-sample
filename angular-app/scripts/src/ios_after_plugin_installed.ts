@@ -21,7 +21,9 @@ function copyFileSync( source:string, target:string ) {
 
 module.exports =  function(context:Context):void {
 
-    //console.dir( context, {depth:3} );
+    const APP_NAME = 'MyApp' // see in config.xml
+
+    //console.dir( context, {depth:4} );
     //console.log( 'root', context.opts.projectRoot);
 
     let plugins =  context.opts.cordova.plugins.filter( (p) => p==='cordova-plugin-broadcaster' );
@@ -37,7 +39,7 @@ module.exports =  function(context:Context):void {
     
     
     {
-    let src_target = path.join( plt_target, 'broadcaster-ionic-sample' );
+    let src_target = path.join( plt_target, APP_NAME );
     let target = path.join( src_target, rel );
     console.log( 'copy\n', source, '\nto\n', target);
     copyFileSync(source, target);
