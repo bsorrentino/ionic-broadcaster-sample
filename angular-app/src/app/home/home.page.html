@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      BROADCASTER PLUGIN SAMPLE
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">BROADCASTER PLUGIN SAMPLE</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item>IONIC NATIVE</ion-item>
+  <ion-list>
+
+    <ion-item>
+        <ion-button (click)="onRegisterListener()">
+          <ion-icon name="radio-button-on-outline"></ion-icon>
+          Register Listener
+        </ion-button>
+        <ion-button (click)="onUnregisterListener()">
+          <ion-icon name="radio-button-off-outline"></ion-icon>
+          Unregister Listener
+        </ion-button>
+    </ion-item>
+
+    <ion-item >
+        <ion-button (click)="onStartTest()">
+          Fire Native Event
+          <ion-icon name="caret-forward"></ion-icon>
+        </ion-button>
+        <ion-button (click)="onClearLog()">Clear Log</ion-button>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-card>
+    <ion-card-header>
+      Log Activity
+    </ion-card-header>
+
+    <ion-list>
+      <ion-item text-wrap *ngFor="let log of logs" >{{log}}</ion-item>
+    </ion-list>
+  </ion-card>
+
+</ion-content>
