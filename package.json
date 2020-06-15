@@ -4,8 +4,7 @@
   "author": "Bartolomeo Sorrentino",
   "homepage": "https://github.com/bsorrentino/ionic-broadcaster-sample#readme",
   "private": true,
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bsorrentino/ionic-broadcaster-sample.git"
