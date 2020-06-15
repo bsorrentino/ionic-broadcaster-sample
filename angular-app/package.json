@@ -10,7 +10,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "ionic:add-broadcaster-plugin": "ionic cordova plugin add ../../cordova-broadcaster/ --force",
+    "ionic:add-broadcaster-plugin-dev": "ionic cordova plugin add ../../cordova-broadcaster/ --force",
+    "ionic:add-broadcaster-plugin": "ionic cordova plugin add cordova-plugin-broadcaster --force",
     "ionic:rm-broadcaster-plugin": "ionic cordova plugin rm cordova-plugin-broadcaster"
   },
   "private": true,
@@ -30,7 +31,7 @@
     "cordova-android": "^8.1.0",
     "cordova-browser": "^6.0.0",
     "cordova-ios": "^5.1.1",
-    "cordova-plugin-broadcaster": "file:../../cordova-broadcaster",
+    "cordova-plugin-broadcaster": "^4.1.0",
     "rxjs": "~6.5.1",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

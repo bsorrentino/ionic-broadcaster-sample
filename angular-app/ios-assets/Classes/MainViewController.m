@@ -27,7 +27,9 @@
 
 #import "MainViewController.h"
 
-@implementation MainViewController
+@implementation MainViewController {
+    NSTimer *timer;
+}
 
 - (id)initWithNibName:(NSString*)nibNameOrNil bundle:(NSBundle*)nibBundleOrNil
 {
@@ -80,11 +82,10 @@
 
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+- (void)dealloc {
+    
+    [timer invalidate];
+    timer = nil;
 }
 
 /* Comment out the block below to over-ride */
@@ -128,6 +129,12 @@
                                                       [self sendJSMessage ];
                                                       
                                                   }];
+    
+    timer = [NSTimer timerWithTimeInterval:5.0 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        [self sendJSMessage ];
+    }];
+    
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
 }
 
 - (void)sendJSMessage {
