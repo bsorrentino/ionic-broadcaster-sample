@@ -31,7 +31,7 @@
     "cordova-android": "^8.1.0",
     "cordova-browser": "^6.0.0",
     "cordova-ios": "^5.1.1",
-    "cordova-plugin-broadcaster": "^4.2.0",
+    "cordova-plugin-broadcaster": "^4.3.0",
     "rxjs": "~6.5.1",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
