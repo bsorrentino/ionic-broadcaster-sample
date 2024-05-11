@@ -10,7 +10,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "ionic:add-broadcaster-plugin-dev": "ionic cordova plugin add ../../cordova-broadcaster/ --force",
+    "ionic:add-broadcaster-plugin-dev": "ionic cordova plugin add ../cordova-broadcaster/ --force",
     "ionic:add-broadcaster-plugin": "ionic cordova plugin add cordova-plugin-broadcaster --force",
     "ionic:rm-broadcaster-plugin": "ionic cordova plugin rm cordova-plugin-broadcaster"
   },
@@ -28,10 +28,7 @@
     "@ionic-native/status-bar": "^5.0.0",
     "@ionic/angular": "^5.0.0",
     "@ionic/cli": "^6.9.2",
-    "cordova-android": "^8.1.0",
-    "cordova-browser": "^6.0.0",
     "cordova-ios": "^5.1.1",
-    "cordova-plugin-broadcaster": "^4.3.1",
     "rxjs": "~6.5.1",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
@@ -49,6 +46,7 @@
     "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
     "cordova": "^9.0.0",
+    "cordova-plugin-broadcaster": "file:../cordova-broadcaster",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-ionic-webview": "^4.2.1",
@@ -56,7 +54,7 @@
     "cordova-plugin-statusbar": "^2.4.2",
     "cordova-plugin-whitelist": "^1.3.3",
     "cordova-res": "^0.14.0",
-    "jasmine-core": "~3.5.0",
+    "jasmine-core": "~3.8.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~5.0.0",
     "karma-chrome-launcher": "~3.1.0",
@@ -83,8 +81,6 @@
       "cordova-plugin-broadcaster": {}
     },
     "platforms": [
-      "android",
-      "browser",
       "ios"
     ]
   }

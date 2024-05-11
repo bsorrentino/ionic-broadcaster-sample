@@ -17,6 +17,5 @@
     "@ionic/cli": "^6.9.2"
   },
   "devDependencies": {
-    "npx-run": "^2.1.2"
   }
 }
